@@ -2,8 +2,14 @@
 <html lang="he" dir="rtl">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>ספריית הפרומפטים שלי</title>
+<meta name="theme-color" content="#f5f5f2" id="metaTheme">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="פרומפטים">
+<!-- הקבצים האלה קיימים רק בגרסה המקוונת; בקובץ המקומי הדפדפן פשוט יתעלם מהם -->
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-192.png">
 <link rel="icon" type="image/png" href="data:image/png;base64,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">
 <script>
 /* נקבע לפני הציור הראשון כדי שלא תהיה הבזקה לבנה בכניסה במצב כהה */
@@ -1396,6 +1402,9 @@ function paintThemeBtn(){
   const dark = currentTheme() === 'dark';
   btnTheme.innerHTML = dark ? SUN : MOON;   // מציג את מה שיקרה בלחיצה
   btnTheme.title = dark ? 'מעבר למצב בהיר' : 'מעבר למצב כהה';
+  // צובע את סרגל המערכת בנייד כשהדף פתוח כאפליקציה
+  const mt = document.getElementById('metaTheme');
+  if(mt) mt.setAttribute('content', dark ? '#131311' : '#f5f5f2');
 }
 function setTheme(t){
   document.documentElement.setAttribute('data-theme', t);
