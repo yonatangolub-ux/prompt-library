@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ספריית הפרומפטים שלי</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAfCSURBVHhe7dvJbxNXHAdwjhxz5Nhjj/wBxePYMSFbvUy8xR7bYUuIk5IKCVCrSumldANacUhVqYuE1EhVBVWhoj1UPVWgqiVqQUX0UEuVPW/GTmwoQSFhedWzPZPxm7fNEsQhP+knrn4fvd/3lzyHXbt2aqd2ymsVi5XdchQE02Y3gmlZoNONYI7VOXoXi60+/HM8t4pGW33JMVCSo9qSHNXWkzENJmN6u1PxTqcTdbMzcrfHG+3Ook52O9WAE6jTqFdgLrMCc9mtzk90O7fabiVvaWUVFpTmNUVZnS4W9T345/S9otFKnzwGFuRRrSW/qsFx1NFO+4OwAicQgBXBAKAgFJRmpwvtXtw2iPhINRMfVYE8CqA8hlqDfIQtACKCAZDsvQVeEBSluV5UWgv45/dU8SHtTGIEwHYjAAEE4xb0IBgAJARsFHgIihWhMwrWmwALhdYSyib8LI4rPqR+ER8GMIFaGKF3FFgI5FHgIBi3gIvQXPaEEB9Sz8SHVIgAtgWBmQdkBNsoMBCKhRb69zJ+LqGKH6hmYgdU2AYQRLACkBCYecBDYG0GEkL3FnQRzuPnY1ZUqvTFBmsAAYgjkG6BTwi0URAIRQOhWGztxc9JrcSgej422Dl8uw0AK4IBMMIbBRxBfDO0ESij4BRBeBSSw5U9sUF1PY4ARBG4efBibAahWxAbqE7H99cgAuAhkEeBhiAQil4QWHmwhbCIn9dWiUjtWhuAh8DMA+8I1DwgINhGgYKgKKsV/Lw9hcIvHqmtJwwAK4IBIByKzjeD4/XoYjMwxyA9CF6SIzWYQO0LAukWbCF88O49+OVnD9ihSEOgjQInFPP51Qx+brPkMAiaAASEnlEgITjYDPPlFbi29gxubj6DC2+1nCFQRkEEQVFW5vFzmzUeqmbGB1RIRGDlAQmBkQfFCR1Wq4+hUQiiPLVqHwUvoUjZDIqySv9FKRmplpIDKsQRbKPAQCCPQi/C8u8b5uGNqvzzGOZSDX8RyHlAB0hHqqXUgApdIzDzoINw6Zs1/Oxm/Xrj0fZvhhwLIARK6QEVmgiRGhuBlQcEhHPvt/Az2+qriw/ICLQ8cIrABQgDE8CG4GEznHhtBW5uPMPPSyy0HRyFogWBOAq9CGyATBjAnltAC0VRhBEAlZQOde0Jfk5qoVB8fXbFBYL9FuAIORbARAiUsmEAhRFYedBFSMU0ePtPe+jxqq4/gZN5wVB08KTGBZgIA+gnwpVv6aHHq+WbG+Q8ICFw8sBAYALkQ6CUCwMoimAbBQzhwjl+6PHq+ysPmQjkUSAjtAGyDXEAIkKEg9AFODnfEA49Xn109j4ZgZkHZAQuQD4MoO0WdDcDcT0SQrGU1WCr+RQ/h+tCPy6/earpIhQJm4EHoIQ0SEQY2FqP+ChYEVJjAN69s4mfwXOhUDw6aQlFYQT8FjAAiiFQKoQ0SEeg54GB8NOPD/HP7lv9fXdT/Mdl6mbgABRDGnSLkB5V4d2/nK880Wq1nrZvATEPSAikPEg7AFDCzhGmFH/n3yiUA2+cbHp+TcryAEohDbJugQjCqeP+bQCjPl28b3tNIiIw86DBBjgogdJkSIM8BJHN8MnH9/AzuK6r3z20vSaRntRso0BA4AIcDGnQKYL1FlgRfrjq/qdAo27f2oDZcZ34pOYGIZtkAByWQOlQvwYdITBGwWso6voTWMjoxCe1XgTLKJAQLJtBDKB/C8ArwsE0cPSboFEoQ9Cv0PhrEo7AzAMyAhvgcL8OcYSezeACwU0onnuvZXtNsiMIhKJ9M7ABjvTrkIdgBRBFuPCh+C9Gl75es70meULozQM6wJQESkeDOnSKYA1F6pPa/hq8cokfijd/e2R7TcIRnHzZYhsFmQMwFdShVwTrLbAioFC89ccj/MxmVf99DPPjGvFJTfTLFh5CWhgg2AEwEXzaDEqCHIpra09h+Wid+KRmNHsUcATyZuACTAd1iCNYb4EfCCeO1W2heObtpu01yYbAzQP+ZkjLOh2gLIHgMUmHPQicUXCLcPadpnn4i5//Z3tNsiKQR4GGwA7FdEI/jZ/brFmp8fKMpEOnCFYAJwgoFG/8sk59UqM9sXtCSOgl/NxmzUj6nrJUh22EoHsEPBRZmyE1qhKf1IhP7AwE4c0gN4L4uXuqHKgvW2+BXwi0zUB6UnOOQLoFdoRUvL7O/bvBsqQvmLcAHwUcwadQxBH8/BreipCM6/w/lEI5MCvVIQvBegt8R2DlAQmBmwdbCMkooM+/teYC9ctMBM4ouEWwjQIDgTwKTIQ73Otv1HFJ3zsXqEMvCG43gxACMw/ICKmoFsPPyay5QH1xFkfwKRRtCD5/Dd+D0AYA1/HzcasoVXbPBeo/IwTrLfALYbu+hu9BQABjWiU57PI/URyXWn2z++oV5ijgCH6HoiiCZTO0ERDAqNZKRnX6n8WJFPrhaG5ffZmH8OJtBrWSHK56O7xRnXFoLDERGKPw/BHU666vPavmXtEPzAbqy24QrABOEWyjQEVQK4lhwV3vpcoSyMwEGkszAX3dj1AkIgh+Dd/p2rXYUHUa3VT8s257TUkgOC1p81OSvoD6COp+feFQu8HCZLeL3Va6nQt3OtvtdLeT4ZrZcqTTcbwHOx0dBEH0X/nwz7RTO7VTwvU/J1KvmyXKJ8YAAAAASUVORK5CYII=">
+<script>
+/* נקבע לפני הציור הראשון כדי שלא תהיה הבזקה לבנה בכניסה במצב כהה */
+(function(){
+  try{
+    var t = localStorage.getItem('promptLibrary.theme');
+    if(t !== 'dark' && t !== 'light'){
+      t = (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+    }
+    document.documentElement.setAttribute('data-theme', t);
+  }catch(e){ document.documentElement.setAttribute('data-theme','light'); }
+})();
+</script>
+<style>
+/* ============================== base ============================== */
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  color-scheme:light;
+  --bg:#f5f5f2;
+  --panel:#ffffff;
+  --panel-2:#fafaf8;
+  --ink:#1a1a18;
+  --ink-2:#57564f;
+  --ink-3:#8c8b82;
+  --line:#e7e6e1;
+  --line-2:#f0efea;
+  --accent:#4f46e5;
+  --accent-soft:#eef0fe;
+  --accent-btn:#4f46e5; --accent-btn-hover:#4338ca; --accent-btn-ink:#ffffff;
+  --star:#e6a308;
+  --star-off:#cfcec6;
+  --danger:#c9372c;
+  --danger-soft:#fdf0ef;
+  --danger-line:#f4d7d4;
+  --hover:#ecebe6;
+  --hover-2:#f2f1ec;
+  --line-hi:#dad9d3;
+  --invert-bg:#1a1a18;
+  --invert-ink:#ffffff;
+  --mark-bg:#fdf0b8;
+  --mark-ink:#1a1a18;
+  --ok-bg:#e8f7ee; --ok-line:#bfe6cd; --ok-ink:#1c7a44;
+  --topbar-bg:rgba(245,245,242,.86);
+  --overlay-bg:rgba(26,26,24,.42);
+  --sel:#dfe0ff;
+  --sb:#dcdbd5; --sb-hover:#c6c5be;
+  --focus-ring:#c3c1f5;
+  --badge-ink:var(--c,var(--accent));
+  --badge-bg:color-mix(in srgb,var(--c,var(--accent)) 11%,transparent);
+  --r-lg:18px; --r-md:13px; --r-sm:9px;
+  --shadow:0 1px 2px rgba(20,20,15,.04), 0 6px 20px rgba(20,20,15,.05);
+  --shadow-lg:0 10px 40px rgba(20,20,15,.14);
+  --shadow-card:0 2px 4px rgba(20,20,15,.04),0 14px 32px rgba(20,20,15,.09);
+  --font:'Segoe UI','Noto Sans Hebrew','Arial Hebrew',system-ui,Arial,sans-serif;
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#131311;
+  --panel:#1c1c1a;
+  --panel-2:#232320;
+  --ink:#efeee8;
+  --ink-2:#b0afa6;
+  --ink-3:#7e7d75;
+  --line:#302f2b;
+  --line-2:#282723;
+  --accent:#8f89f6;
+  --accent-soft:#272552;
+  --accent-btn:#5b54e8; --accent-btn-hover:#4a43d6; --accent-btn-ink:#ffffff;
+  --star:#f0b429;
+  --star-off:#54534c;
+  --danger:#f07c70;
+  --danger-soft:#33201d;
+  --danger-line:#4d2a25;
+  --hover:#292824;
+  --hover-2:#302f2b;
+  --line-hi:#3d3c37;
+  --invert-bg:#efeee8;
+  --invert-ink:#17170f;
+  --mark-bg:#544716;
+  --mark-ink:#ffeaa8;
+  --ok-bg:#17301f; --ok-line:#2c5a3a; --ok-ink:#7fd6a0;
+  --topbar-bg:rgba(19,19,17,.86);
+  --overlay-bg:rgba(0,0,0,.6);
+  --sel:#37347a;
+  --sb:#37362f; --sb-hover:#4a4941;
+  --focus-ring:#4f4aa8;
+  --badge-ink:color-mix(in srgb,var(--c,var(--accent)) 60%,#ffffff);
+  --badge-bg:color-mix(in srgb,var(--c,var(--accent)) 24%,transparent);
+  --shadow:0 1px 2px rgba(0,0,0,.3), 0 6px 20px rgba(0,0,0,.28);
+  --shadow-lg:0 12px 44px rgba(0,0,0,.55);
+  --shadow-card:0 2px 4px rgba(0,0,0,.3),0 14px 32px rgba(0,0,0,.42);
+}
+html,body{height:100%}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:var(--font); font-size:15px; line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer;border:none;background:none}
+::selection{background:var(--sel)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
+/* scrollbars */
+*::-webkit-scrollbar{width:10px;height:10px}
+*::-webkit-scrollbar-thumb{background:var(--sb);border-radius:99px;border:3px solid transparent;background-clip:content-box}
+*::-webkit-scrollbar-thumb:hover{background:var(--sb-hover);background-clip:content-box}
+
+/* ============================== header ============================== */
+.topbar{
+  position:sticky;top:0;z-index:40;
+  background:var(--topbar-bg); backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.topbar-in{
+  max-width:1400px;margin:0 auto;padding:14px 24px;
+  display:flex;align-items:center;gap:16px;
+}
+.brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.brand-mark{
+  width:34px;height:34px;border-radius:10px;flex-shrink:0;
+  background:linear-gradient(140deg,#6366f1,#4f46e5 60%,#7c3aed);
+  display:grid;place-items:center;color:#fff;font-size:17px;
+  box-shadow:0 2px 8px rgba(79,70,229,.32);
+}
+.brand-txt strong{display:block;font-size:15.5px;font-weight:650;letter-spacing:-.2px;line-height:1.25}
+.brand-txt span{display:block;font-size:12px;color:var(--ink-3)}
+
+.search{position:relative;flex:1;max-width:560px;margin-inline:auto}
+.search input{
+  width:100%;padding:11px 42px 11px 78px;
+  background:var(--panel);border:1px solid var(--line);border-radius:12px;
+  font-size:14.5px;transition:border-color .15s,box-shadow .15s;
+}
+.search input::placeholder{color:var(--ink-3)}
+.search input:focus{outline:none;border-color:var(--focus-ring);box-shadow:0 0 0 4px var(--accent-soft)}
+.search .ico{position:absolute;inset-inline-start:14px;top:50%;transform:translateY(-50%);color:var(--ink-3);pointer-events:none;display:flex}
+.search kbd{
+  position:absolute;inset-inline-end:10px;top:50%;transform:translateY(-50%);
+  font-family:var(--font);font-size:11px;color:var(--ink-3);
+  background:var(--panel-2);border:1px solid var(--line);border-radius:6px;padding:2px 7px;pointer-events:none;
+}
+.search input:not(:placeholder-shown)~kbd{display:none}
+
+.top-actions{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.btn{
+  display:inline-flex;align-items:center;gap:7px;
+  padding:9px 14px;border-radius:10px;font-size:14px;font-weight:550;
+  border:1px solid var(--line);background:var(--panel);color:var(--ink);
+  transition:background .14s,border-color .14s,transform .06s;
+}
+.btn:hover{background:var(--panel-2);border-color:var(--line-hi)}
+.btn:active{transform:translateY(1px)}
+.btn-primary{background:var(--accent-btn);border-color:var(--accent-btn);color:var(--accent-btn-ink);box-shadow:0 2px 8px rgba(79,70,229,.25)}
+.btn-primary:hover{background:var(--accent-btn-hover);border-color:var(--accent-btn-hover)}
+.btn-icon{padding:9px;width:38px;justify-content:center}
+#btnSync[data-state="off"]{color:var(--ink-3)}
+#btnSync[data-state="ok"]{color:var(--ok-ink)}
+#btnSync[data-state="error"]{color:var(--danger)}
+#btnSync[data-state="pending"]{color:var(--accent)}
+#btnSync[data-state="working"]{color:var(--accent);animation:pulse 1.1s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.btn-ghost{border-color:transparent;background:transparent}
+.btn-ghost:hover{background:var(--hover);border-color:transparent}
+.btn-danger{color:var(--danger)}
+.btn-danger:hover{background:var(--danger-soft);border-color:var(--danger-line)}
+
+/* ============================== layout ============================== */
+.shell{max-width:1400px;margin:0 auto;padding:24px;display:flex;gap:26px;align-items:flex-start}
+.side{
+  width:250px;flex-shrink:0;position:sticky;top:88px;
+  max-height:calc(100vh - 112px);overflow-y:auto;padding-bottom:8px;
+}
+.side-title{
+  font-size:11.5px;font-weight:650;color:var(--ink-3);letter-spacing:.6px;
+  text-transform:uppercase;margin:18px 8px 8px;
+}
+.side-title:first-child{margin-top:0}
+.nav-item{
+  width:100%;display:flex;align-items:center;gap:10px;
+  padding:8px 10px;border-radius:10px;font-size:14.5px;text-align:start;
+  color:var(--ink-2);transition:background .12s,color .12s;
+}
+.nav-item:hover{background:var(--hover);color:var(--ink)}
+.nav-item.on{background:var(--panel);color:var(--ink);font-weight:600;box-shadow:var(--shadow)}
+.nav-item .dot{width:9px;height:9px;border-radius:3px;background:var(--c,var(--ink-3));flex-shrink:0}
+.nav-item .em{font-size:15px;line-height:1;flex-shrink:0;width:18px;text-align:center}
+.nav-item .lbl{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.nav-item .cnt{font-size:12px;color:var(--ink-3);font-variant-numeric:tabular-nums;font-weight:500}
+.nav-item.on .cnt{color:var(--ink-2)}
+.subnav{margin:2px 0 6px;padding-inline-start:26px;display:flex;flex-direction:column;gap:1px}
+.subnav button{
+  text-align:start;padding:6px 10px;border-radius:8px;font-size:13.5px;color:var(--ink-2);
+  display:flex;justify-content:space-between;gap:8px;
+}
+.subnav button:hover{background:var(--hover)}
+.subnav button.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+.subnav button span:last-child{font-size:11.5px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+
+.main{flex:1;min-width:0}
+
+/* toolbar */
+.toolbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.crumb{font-size:19px;font-weight:650;letter-spacing:-.3px;margin:0}
+.crumb small{font-size:13.5px;font-weight:500;color:var(--ink-3);margin-inline-start:8px}
+.toolbar-end{margin-inline-start:auto;display:flex;align-items:center;gap:8px}
+select.sel{
+  padding:8px 11px;border-radius:10px;border:1px solid var(--line);
+  background:var(--panel);font-size:13.5px;cursor:pointer;
+}
+select.sel:hover{border-color:var(--line-hi)}
+
+.tagbar{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:18px}
+.tag-chip{
+  padding:5px 11px;border-radius:99px;border:1px solid var(--line);
+  background:var(--panel);font-size:12.5px;color:var(--ink-2);
+  transition:background .12s,border-color .12s,color .12s;
+}
+.tag-chip:hover{border-color:var(--line-hi)}
+.tag-chip.on{background:var(--invert-bg);border-color:var(--invert-bg);color:var(--invert-ink)}
+.tag-chip .x{opacity:.6;margin-inline-start:4px}
+
+/* ============================== cards ============================== */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:16px;align-items:start}
+.card{
+  position:relative;background:var(--panel);border:1px solid var(--line);
+  border-radius:var(--r-lg);padding:18px 18px 14px;
+  box-shadow:var(--shadow);cursor:pointer;
+  transition:transform .16s cubic-bezier(.2,.8,.3,1),box-shadow .16s,border-color .16s;
+  display:flex;flex-direction:column;min-height:196px;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-card);border-color:var(--line-hi)}
+.card::before{
+  content:'';position:absolute;inset-inline-start:0;top:16px;bottom:16px;width:3px;
+  border-radius:0 3px 3px 0;background:var(--c,var(--accent));opacity:0;transition:opacity .16s;
+}
+.card:hover::before{opacity:.85}
+.card-top{display:flex;align-items:flex-start;gap:8px;margin-bottom:9px}
+.badge{
+  display:inline-flex;align-items:center;gap:5px;flex-shrink:0;
+  font-size:11.5px;font-weight:600;padding:3px 9px;border-radius:99px;
+  color:var(--badge-ink);background:var(--badge-bg);
+}
+.badge .em{font-size:12px}
+.sub-lbl{font-size:11.5px;color:var(--ink-3);padding-top:4px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.star{
+  margin-inline-start:auto;flex-shrink:0;width:28px;height:28px;border-radius:8px;
+  display:grid;place-items:center;color:var(--star-off);transition:color .12s,background .12s;
+}
+.star:hover{background:var(--hover-2);color:var(--star)}
+.star.on{color:var(--star)}
+.card h3{margin:0 0 6px;font-size:16px;font-weight:650;letter-spacing:-.2px;line-height:1.4}
+.card .desc{margin:0 0 10px;font-size:13.5px;color:var(--ink-2);
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.card .snip{
+  font-size:12.5px;color:var(--ink-3);background:var(--panel-2);
+  border:1px solid var(--line-2);border-radius:var(--r-md);padding:9px 11px;
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;
+  line-height:1.55;white-space:pre-wrap;word-break:break-word;
+}
+.card .tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:11px}
+.mini-tag{font-size:11px;color:var(--ink-3);background:var(--panel-2);border:1px solid var(--line-2);
+  padding:2px 8px;border-radius:99px}
+.card-foot{
+  margin-top:auto;padding-top:12px;display:flex;align-items:center;gap:6px;
+}
+.card-foot .used{margin-inline-start:auto;font-size:11.5px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.act{
+  display:inline-flex;align-items:center;gap:6px;padding:7px 11px;border-radius:9px;
+  font-size:13px;font-weight:550;color:var(--ink-2);border:1px solid var(--line);background:var(--panel);
+  transition:background .12s,color .12s,border-color .12s;
+}
+.act:hover{background:var(--panel-2);color:var(--ink);border-color:var(--line-hi)}
+.act.copy.done{background:var(--ok-bg);border-color:var(--ok-line);color:var(--ok-ink)}
+.act-sm{padding:7px;width:32px;justify-content:center}
+mark{background:var(--mark-bg);color:var(--mark-ink);border-radius:3px;padding:0 1px}
+
+.empty{
+  text-align:center;padding:74px 20px;color:var(--ink-3);
+  background:var(--panel);border:1px dashed var(--line);border-radius:var(--r-lg);
+}
+.empty .big{font-size:34px;margin-bottom:10px}
+.empty h3{margin:0 0 6px;color:var(--ink-2);font-size:16.5px;font-weight:600}
+.empty p{margin:0 0 16px;font-size:14px}
+
+/* ============================== modal ============================== */
+.overlay{
+  position:fixed;inset:0;z-index:60;background:var(--overlay-bg);
+  backdrop-filter:blur(3px);display:flex;align-items:flex-start;justify-content:center;
+  padding:44px 20px;overflow-y:auto;animation:fade .16s ease;
+}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes pop{from{opacity:0;transform:translateY(10px) scale(.99)}to{opacity:1;transform:none}}
+.modal{
+  width:100%;max-width:720px;background:var(--panel);border-radius:20px;
+  box-shadow:var(--shadow-lg);animation:pop .2s cubic-bezier(.2,.8,.3,1);
+  display:flex;flex-direction:column;max-height:calc(100vh - 88px);
+}
+.modal-head{padding:22px 24px 16px;border-bottom:1px solid var(--line-2);display:flex;gap:12px;align-items:flex-start}
+.modal-head h2{margin:6px 0 0;font-size:20px;font-weight:680;letter-spacing:-.3px;line-height:1.35;flex:1}
+.modal-head .meta{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.modal-body{padding:20px 24px;overflow-y:auto}
+.modal-foot{
+  padding:14px 24px;border-top:1px solid var(--line-2);display:flex;align-items:center;gap:8px;
+  background:var(--panel-2);border-radius:0 0 20px 20px;
+}
+.modal-foot .end{margin-inline-start:auto;display:flex;gap:8px}
+.close-x{width:32px;height:32px;border-radius:9px;display:grid;place-items:center;color:var(--ink-3);flex-shrink:0}
+.close-x:hover{background:var(--hover);color:var(--ink)}
+.prompt-box{
+  background:var(--panel-2);border:1px solid var(--line);border-radius:var(--r-md);
+  padding:16px 18px;font-size:14px;line-height:1.75;white-space:pre-wrap;word-break:break-word;
+  max-height:46vh;overflow-y:auto;
+}
+.modal .desc-txt{margin:0 0 16px;color:var(--ink-2);font-size:14.5px}
+
+/* form */
+.field{margin-bottom:15px}
+.field label{display:block;font-size:12.5px;font-weight:600;color:var(--ink-2);margin-bottom:6px}
+.field .hint{font-weight:400;color:var(--ink-3);font-size:11.5px}
+.inp{
+  width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;
+  background:var(--panel);font-size:14px;transition:border-color .14s,box-shadow .14s;
+}
+.inp:focus{outline:none;border-color:var(--focus-ring);box-shadow:0 0 0 4px var(--accent-soft)}
+textarea.inp{min-height:210px;resize:vertical;line-height:1.7;font-size:13.5px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.err{color:var(--danger);font-size:12.5px;margin-top:5px;display:none}
+.err.show{display:block}
+
+/* share popover */
+.pop{
+  position:absolute;z-index:70;background:var(--panel);border:1px solid var(--line);
+  border-radius:var(--r-md);box-shadow:var(--shadow-lg);padding:5px;min-width:198px;
+  animation:pop .13s ease;
+}
+.pop button{
+  width:100%;display:flex;align-items:center;gap:9px;padding:8px 10px;border-radius:8px;
+  font-size:13.5px;text-align:start;color:var(--ink-2);
+}
+.pop button:hover{background:var(--panel-2);color:var(--ink)}
+
+/* toast */
+.toasts{position:fixed;bottom:22px;inset-inline-start:22px;z-index:90;display:flex;flex-direction:column;gap:8px}
+.toast{
+  background:var(--invert-bg);color:var(--invert-ink);padding:11px 16px;border-radius:11px;font-size:13.5px;
+  box-shadow:var(--shadow-lg);animation:pop .18s ease;display:flex;align-items:center;gap:9px;
+}
+.toast.bad{background:var(--danger)}
+
+svg{flex-shrink:0}
+
+/* ============================== responsive ============================== */
+@media (max-width:960px){
+  .shell{flex-direction:column;padding:16px;gap:16px}
+  .side{
+    width:100%;position:static;max-height:none;display:flex;gap:7px;
+    overflow-x:auto;padding-bottom:6px;
+  }
+  .side-title,.subnav{display:none}
+  .nav-item{width:auto;flex-shrink:0;background:var(--panel);border:1px solid var(--line);padding:7px 12px;font-size:13.5px}
+  .nav-item.on{background:var(--invert-bg);color:var(--invert-ink);border-color:var(--invert-bg)}
+  .nav-item.on .cnt{color:var(--invert-ink);opacity:.7}
+  .topbar-in{flex-wrap:wrap;padding:12px 16px;gap:10px}
+  .search{order:3;max-width:none;flex-basis:100%}
+  .top-actions{margin-inline-start:auto}
+  .brand-txt span{display:none}
+  .grid{grid-template-columns:1fr}
+  .overlay{padding:12px}
+  .modal{max-height:calc(100vh - 24px)}
+  .row2{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <div class="brand">
+      <div class="brand-mark">◆</div>
+      <div class="brand-txt">
+        <strong>ספריית הפרומפטים</strong>
+        <span id="brandCount">—</span>
+      </div>
+    </div>
+
+    <div class="search">
+      <span class="ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></span>
+      <input id="q" type="search" placeholder="חיפוש בפרומפטים, בתיאורים ובתגיות…" autocomplete="off">
+      <kbd>Ctrl + K</kbd>
+    </div>
+
+    <div class="top-actions">
+      <button class="btn btn-primary" id="btnNew">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+        פרומפט חדש
+      </button>
+      <button class="btn btn-icon" id="btnSync" title="סנכרון" aria-label="סנכרון עם הנייד"></button>
+      <button class="btn btn-icon" id="btnTheme" title="מצב כהה / בהיר" aria-label="החלפת ערכת נושא"></button>
+      <button class="btn btn-icon" id="btnMenu" title="עוד">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="5" r="1.7"/><circle cx="12" cy="12" r="1.7"/><circle cx="12" cy="19" r="1.7"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="side" id="side"></aside>
+  <main class="main">
+    <div class="toolbar">
+      <h1 class="crumb" id="crumb">הכול</h1>
+      <div class="toolbar-end">
+        <select class="sel" id="sort">
+          <option value="recent">נוספו לאחרונה</option>
+          <option value="used">הכי בשימוש</option>
+          <option value="title">לפי שם</option>
+        </select>
+      </div>
+    </div>
+    <div class="tagbar" id="tagbar"></div>
+    <div class="grid" id="grid"></div>
+  </main>
+</div>
+
+<div class="toasts" id="toasts"></div>
+<input type="file" id="fileIn" accept="application/json" hidden>
+
+<script>
+/* ============================================================
+   ספריית פרומפטים — קובץ יחיד, ללא תלויות חיצוניות.
+   הנתונים נשמרים ב-localStorage. גיבוי דרך ייצוא/ייבוא JSON.
+   ============================================================ */
+const KEY = 'promptLibrary.v1';
+const uid = () => Math.random().toString(36).slice(2, 9) + Date.now().toString(36).slice(-4);
+const now = () => new Date().toISOString();
+
+/* ------------------------------ seed ------------------------------ */
+const SEED_CATS = [
+  { id:'writing',   name:'כתיבה ותוכן',   emoji:'✍️', color:'#d97706', subs:[
+      {id:'social', name:'רשתות חברתיות'},{id:'email', name:'מיילים והתכתבויות'},
+      {id:'article', name:'מאמרים ובלוג'},{id:'edit', name:'עריכה וניסוח מחדש'}]},
+  { id:'work',      name:'עבודה וניהול',  emoji:'💼', color:'#2563eb', subs:[
+      {id:'meetings', name:'פגישות וסיכומים'},{id:'docs', name:'מסמכים ומצגות'},
+      {id:'planning', name:'תכנון ומשימות'}]},
+  { id:'dev',       name:'פיתוח וקוד',    emoji:'💻', color:'#059669', subs:[
+      {id:'build', name:'כתיבת קוד'},{id:'debug', name:'דיבאג ותקלות'},
+      {id:'review', name:'סקירת קוד'},{id:'docs2', name:'תיעוד'}]},
+  { id:'research',  name:'מחקר וניתוח',   emoji:'🔍', color:'#7c3aed', subs:[
+      {id:'summary', name:'סיכום מקורות'},{id:'compare', name:'השוואות והחלטות'},
+      {id:'market', name:'חקר שוק'}]},
+  { id:'marketing', name:'שיווק ומכירות', emoji:'📈', color:'#db2777', subs:[
+      {id:'copy', name:'קופי ומסרים'},{id:'ads', name:'מודעות וקמפיינים'},
+      {id:'landing', name:'דפי נחיתה'}]},
+  { id:'learning',  name:'למידה ואישי',   emoji:'🎓', color:'#0891b2', subs:[
+      {id:'learn', name:'לימוד נושא חדש'},{id:'practice', name:'תרגול ושאלות'},
+      {id:'personal', name:'חשיבה אישית'}]},
+  { id:'meta',      name:'מטא-פרומפטים',  emoji:'🧠', color:'#4f46e5', subs:[
+      {id:'improve', name:'שיפור פרומפטים'},{id:'system', name:'הנחיות מערכת'},
+      {id:'agents', name:'בניית סוכנים'}]}
+];
+
+const PH = `[מחזיק מקום — כאן ייכנס הפרומפט האמיתי]
+
+## תפקיד
+אתה [תיאור התפקיד והמומחיות].
+
+## משימה
+[מה בדיוק צריך לעשות].
+
+## קלט
+[הטקסט / הנתונים / ההקשר שאני מספק].
+
+## הנחיות
+1. [הנחיה ראשונה]
+2. [הנחיה שנייה]
+3. [מה לא לעשות]
+
+## פורמט הפלט
+[מבנה התשובה המבוקש].`;
+
+const SEED_PROMPTS = [
+  ['פוסט לינקדאין מסיפור אישי','writing','social',['לינקדאין','סטוריטלינג'],'הופך אירוע או תובנה מהשבוע לפוסט עם פתיח חזק ושורת סיום.'],
+  ['שרשור טוויטר מרעיון אחד','writing','social',['X','שרשור'],'פורס רעיון מרכזי לשרשור קצר וקריא.'],
+  ['מייל קר ללקוח פוטנציאלי','writing','email',['מכירות','אאוטריץ׳'],'מייל ראשון קצר, ממוקד ערך, בלי להישמע כמו תבנית.'],
+  ['תשובה מנומסת לסירוב','writing','email',['תקשורת'],'מנסח סירוב ברור ששומר על הקשר.'],
+  ['מאמר מקיף מראשי פרקים','writing','article',['בלוג','SEO'],'הופך שלד של ראשי פרקים לטיוטת מאמר מלאה.'],
+  ['עריכה ללא שינוי הקול שלי','writing','edit',['עריכה'],'מהדק ניסוח ומתקן שגיאות, בלי לשטח את הסגנון האישי.'],
+  ['תרגום שנשמע כמו מקור','writing','edit',['תרגום'],'תרגום מאנגלית לעברית טבעית ולא מילולית.'],
+
+  ['סיכום פגישה לפי החלטות','work','meetings',['סיכום','פעולות'],'מפריד בין החלטות, משימות פתוחות ואחראים.'],
+  ['סדר יום לפגישה בעייתית','work','meetings',['ניהול'],'בונה אג׳נדה לשיחה עם נושא רגיש.'],
+  ['מסמך אפיון ממחשבות מפוזרות','work','docs',['אפיון','PRD'],'הופך ערימת רעיונות למסמך מסודר עם מטרות והיקף.'],
+  ['שלד מצגת ל-10 שקפים','work','docs',['מצגת'],'מבנה סיפורי לשקפים עם מסר אחד לכל שקף.'],
+  ['פירוק פרויקט למשימות','work','planning',['ניהול','תכנון'],'שובר יעד גדול לצעדים קטנים עם סדר עדיפויות.'],
+  ['תכנון שבוע לפי אנרגיה','work','planning',['פרודוקטיביות'],'משבץ משימות לפי רמת הריכוז הנדרשת.'],
+
+  ['כתיבת פונקציה עם בדיקות','dev','build',['קוד','טסטים'],'מייצר מימוש נקי יחד עם מקרי קצה ובדיקות.'],
+  ['רפקטור לקוד קיים','dev','build',['רפקטור'],'משפר קריאות ומבנה בלי לשנות התנהגות.'],
+  ['ניתוח שגיאה משורת סטאק','dev','debug',['דיבאג'],'מזהה את הסיבה השורשית ומציע תיקון מינימלי.'],
+  ['למה זה עובד מקומית ולא בפרודקשן','dev','debug',['דיבאג','דיפלוי'],'רשימת חשודים מסודרת לפי סבירות.'],
+  ['סקירת קוד לפני מיזוג','dev','review',['code review'],'עובר על הדיף ומדגיש באגים אמיתיים בלבד.'],
+  ['README לפרויקט','dev','docs2',['תיעוד'],'מייצר README ברור עם התקנה, שימוש ודוגמאות.'],
+
+  ['סיכום מאמר ארוך לנקודות','research','summary',['סיכום'],'מוציא את הטענות המרכזיות ואת מה שלא נאמר.'],
+  ['השוואת שתי אפשרויות','research','compare',['החלטות'],'טבלת יתרונות, חסרונות והמלצה מנומקת.'],
+  ['ניתוח מתחרים','research','market',['שוק'],'ממפה מתחרים לפי מיצוב, מחיר ופערים.'],
+  ['שאלות שכדאי לשאול לפני שמחליטים','research','compare',['חשיבה'],'חושף הנחות סמויות בהחלטה.'],
+
+  ['קופי לעמוד מוצר','marketing','copy',['קופי'],'כותרת, תת-כותרת ושלוש נקודות ערך.'],
+  ['חמש וריאציות לכותרת','marketing','copy',['A/B'],'זוויות שונות לאותו מסר לבדיקת ביצועים.'],
+  ['מודעת פייסבוק לפי קהל','marketing','ads',['מודעות'],'מתאים את המסר לקהל יעד ספציפי.'],
+  ['מבנה דף נחיתה שממיר','marketing','landing',['המרות'],'סדר סקשנים עם התנגדויות ומענה.'],
+
+  ['תסביר לי נושא מאפס','learning','learn',['למידה'],'הסבר מדורג משלוש רמות עומק.'],
+  ['תרגל אותי בשאלות','learning','practice',['תרגול'],'שאלות מדורגות עם משוב על התשובות.'],
+  ['שיחה עם עצמי על החלטה','learning','personal',['רפלקציה'],'שאלות מנחות במקום תשובות מוכנות.'],
+
+  ['שפר לי את הפרומפט הזה','meta','improve',['מטא'],'מזהה עמימות ומחזיר גרסה חדה יותר.'],
+  ['הפוך תיאור לפרומפט מלא','meta','improve',['מטא'],'ממה שאני רוצה — לפרומפט מובנה.'],
+  ['הנחיית מערכת לעוזר ייעודי','meta','system',['system prompt'],'מגדיר תפקיד, גבולות וטון לעוזר קבוע.'],
+  ['אפיון סוכן עם כלים','meta','agents',['סוכנים'],'מגדיר מטרה, כלים ותנאי עצירה לסוכן.']
+];
+
+function seed(){
+  const t = Date.now();
+  return {
+    updatedAt: now(),
+    deleted: [],
+    cats: JSON.parse(JSON.stringify(SEED_CATS)),
+    prompts: SEED_PROMPTS.map(([title, cat, sub, tags, desc], i) => ({
+      id: uid(), title, desc, body: PH, cat, sub, tags,
+      fav:false, uses:0, own:false,
+      created:new Date(t - (SEED_PROMPTS.length - i) * 60000).toISOString(),
+      updated:new Date(t - (SEED_PROMPTS.length - i) * 60000).toISOString()
+    }))
+  };
+}
+
+/* ------------------------------ state ------------------------------ */
+let data = load();
+let ui = { view:'all', cat:null, sub:null, q:'', tags:[], sort:'recent' };
+
+function normalize(d){
+  if(!Array.isArray(d.deleted)) d.deleted = [];
+  if(!d.updatedAt) d.updatedAt = now();
+  return d;
+}
+function load(){
+  try{
+    const raw = localStorage.getItem(KEY);
+    if(raw){
+      const d = JSON.parse(raw);
+      if(Array.isArray(d.cats) && Array.isArray(d.prompts)) return normalize(d);
+    }
+  }catch(e){ console.warn('load failed', e); }
+  const d = seed(); persist(d); return d;
+}
+function persist(d = data){
+  try{ localStorage.setItem(KEY, JSON.stringify(d)); }
+  catch(e){ toast('שמירה נכשלה — ייתכן שנגמר המקום בדפדפן', true); }
+}
+/* כל שינוי בנתונים עובר דרך כאן: חותם זמן, שמירה מקומית, ודחיפה לענן אם הסנכרון פעיל */
+function save(){
+  data.updatedAt = now();
+  persist();
+  scheduleSync();
+}
+/* מצבה של מחיקה נשמרת, אחרת מכשיר אחר יחזיר את הפרומפט בסנכרון הבא */
+function tombstone(id){
+  data.deleted = data.deleted.filter(t => t.id !== id);
+  data.deleted.push({ id, at: now() });
+}
+const catById = id => data.cats.find(c => c.id === id);
+const subName = (c, s) => { const cc = catById(c); const ss = cc && cc.subs.find(x => x.id === s); return ss ? ss.name : ''; };
+
+/* ------------------------------ helpers ------------------------------ */
+const esc = s => String(s ?? '').replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+const norm = s => String(s ?? '').toLowerCase().replace(/["'׳״]/g,'').trim();
+
+function hl(text, q){
+  const t = esc(text);
+  if(!q) return t;
+  const parts = norm(q).split(/\s+/).filter(w => w.length > 1);
+  if(!parts.length) return t;
+  const rx = new RegExp('(' + parts.map(p => p.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|') + ')','gi');
+  return t.replace(rx, '<mark>$1</mark>');
+}
+
+function matches(p, q){
+  if(!q) return true;
+  const hay = norm([p.title, p.desc, p.body, p.tags.join(' '), catById(p.cat)?.name, subName(p.cat,p.sub)].join(' '));
+  return norm(q).split(/\s+/).filter(Boolean).every(w => hay.includes(w));
+}
+
+function visible(){
+  let list = data.prompts.slice();
+  if(ui.view === 'fav') list = list.filter(p => p.fav);
+  else if(ui.view === 'own') list = list.filter(p => p.own);
+  else if(ui.view === 'cat'){
+    list = list.filter(p => p.cat === ui.cat);
+    if(ui.sub) list = list.filter(p => p.sub === ui.sub);
+  }
+  if(ui.tags.length) list = list.filter(p => ui.tags.every(t => p.tags.includes(t)));
+  list = list.filter(p => matches(p, ui.q));
+  const coll = new Intl.Collator('he');
+  if(ui.sort === 'title') list.sort((a,b) => coll.compare(a.title, b.title));
+  else if(ui.sort === 'used') list.sort((a,b) => (b.uses - a.uses) || (b.created > a.created ? 1 : -1));
+  else list.sort((a,b) => a.created < b.created ? 1 : -1);
+  return list;
+}
+
+/* ------------------------------ toasts ------------------------------ */
+function toast(msg, bad){
+  const el = document.createElement('div');
+  el.className = 'toast' + (bad ? ' bad' : '');
+  el.innerHTML = (bad ? '' : '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>') + '<span>' + esc(msg) + '</span>';
+  toasts.appendChild(el);
+  setTimeout(() => { el.style.transition = 'opacity .25s,transform .25s'; el.style.opacity = '0'; el.style.transform = 'translateY(6px)'; setTimeout(() => el.remove(), 260); }, 2100);
+}
+
+async function copyText(txt){
+  try{
+    if(navigator.clipboard && window.isSecureContext){ await navigator.clipboard.writeText(txt); return true; }
+    throw new Error('no clipboard api');
+  }catch(e){
+    try{
+      const ta = document.createElement('textarea');
+      ta.value = txt; ta.setAttribute('readonly','');
+      ta.style.cssText = 'position:fixed;top:-1000px;opacity:0';
+      document.body.appendChild(ta); ta.select();
+      const ok = document.execCommand('copy'); ta.remove(); return ok;
+    }catch(e2){ return false; }
+  }
+}
+
+/* ------------------------------ sidebar ------------------------------ */
+function renderSide(){
+  const counts = {}; data.prompts.forEach(p => { counts[p.cat] = (counts[p.cat] || 0) + 1; });
+  const subCounts = {}; data.prompts.forEach(p => { const k = p.cat + '/' + p.sub; subCounts[k] = (subCounts[k] || 0) + 1; });
+  const favN = data.prompts.filter(p => p.fav).length;
+  const ownN = data.prompts.filter(p => p.own).length;
+
+  let h = '<div class="side-title">תצוגה</div>';
+  h += navBtn('all', '📚', 'הכול', data.prompts.length, ui.view === 'all');
+  h += navBtn('fav', '⭐', 'המועדפים שלי', favN, ui.view === 'fav');
+  if(ownN) h += navBtn('own', '✨', 'שהוספתי', ownN, ui.view === 'own');
+  h += '<div class="side-title">קטגוריות</div>';
+
+  data.cats.forEach(c => {
+    const on = ui.view === 'cat' && ui.cat === c.id;
+    h += `<button class="nav-item${on ? ' on' : ''}" data-cat="${esc(c.id)}" style="--c:${esc(c.color)}">
+      <span class="em">${esc(c.emoji || '')}</span><span class="lbl">${esc(c.name)}</span>
+      <span class="cnt">${counts[c.id] || 0}</span></button>`;
+    if(on && c.subs.length){
+      h += '<div class="subnav">';
+      h += `<button class="${!ui.sub ? 'on' : ''}" data-sub=""><span>הכול בקטגוריה</span><span>${counts[c.id] || 0}</span></button>`;
+      c.subs.forEach(s => {
+        h += `<button class="${ui.sub === s.id ? 'on' : ''}" data-sub="${esc(s.id)}"><span>${esc(s.name)}</span><span>${subCounts[c.id + '/' + s.id] || 0}</span></button>`;
+      });
+      h += '</div>';
+    }
+  });
+  side.innerHTML = h;
+  brandCount.textContent = data.prompts.length + ' פרומפטים · ' + data.cats.length + ' קטגוריות';
+}
+function navBtn(view, em, label, n, on){
+  return `<button class="nav-item${on ? ' on' : ''}" data-view="${view}">
+    <span class="em">${em}</span><span class="lbl">${esc(label)}</span><span class="cnt">${n}</span></button>`;
+}
+
+side.addEventListener('click', e => {
+  const v = e.target.closest('[data-view]');
+  const c = e.target.closest('[data-cat]');
+  const s = e.target.closest('[data-sub]');
+  if(s){ ui.sub = s.dataset.sub || null; render(); return; }
+  if(c){
+    if(ui.view === 'cat' && ui.cat === c.dataset.cat){ ui.view = 'all'; ui.cat = null; }
+    else { ui.view = 'cat'; ui.cat = c.dataset.cat; }
+    ui.sub = null; render(); return;
+  }
+  if(v){ ui.view = v.dataset.view; ui.cat = null; ui.sub = null; render(); }
+});
+
+/* ------------------------------ tags ------------------------------ */
+function renderTags(){
+  const pool = {};
+  const scope = data.prompts.filter(p => {
+    if(ui.view === 'fav') return p.fav;
+    if(ui.view === 'own') return p.own;
+    if(ui.view === 'cat') return p.cat === ui.cat && (!ui.sub || p.sub === ui.sub);
+    return true;
+  });
+  scope.forEach(p => p.tags.forEach(t => pool[t] = (pool[t] || 0) + 1));
+  const tags = Object.keys(pool).sort((a,b) => pool[b] - pool[a] || new Intl.Collator('he').compare(a,b));
+  const shown = tags.slice(0, 18);
+  let h = '';
+  ui.tags.forEach(t => { if(!shown.includes(t)) h += chip(t, true, pool[t] || 0); });
+  shown.forEach(t => h += chip(t, ui.tags.includes(t), pool[t]));
+  if(ui.tags.length) h += `<button class="tag-chip" data-clear="1" style="color:var(--danger)">נקה סינון</button>`;
+  tagbar.innerHTML = h;
+  tagbar.style.display = h ? 'flex' : 'none';
+}
+const chip = (t, on, n) => `<button class="tag-chip${on ? ' on' : ''}" data-tag="${esc(t)}">${esc(t)}${on ? '<span class="x">×</span>' : (n ? ' <span style="opacity:.5">' + n + '</span>' : '')}</button>`;
+
+tagbar.addEventListener('click', e => {
+  if(e.target.closest('[data-clear]')){ ui.tags = []; render(); return; }
+  const b = e.target.closest('[data-tag]'); if(!b) return;
+  const t = b.dataset.tag;
+  ui.tags = ui.tags.includes(t) ? ui.tags.filter(x => x !== t) : ui.tags.concat(t);
+  render();
+});
+
+/* ------------------------------ grid ------------------------------ */
+function render(){
+  renderSide(); renderTags();
+  const list = visible();
+
+  let title = 'הכול';
+  if(ui.view === 'fav') title = 'המועדפים שלי';
+  else if(ui.view === 'own') title = 'שהוספתי';
+  else if(ui.view === 'cat'){
+    const c = catById(ui.cat);
+    title = c ? c.name : 'הכול';
+    if(ui.sub) title += ' · ' + subName(ui.cat, ui.sub);
+  }
+  crumb.innerHTML = esc(title) + (ui.q ? `<small>תוצאות עבור «${esc(ui.q)}»</small>` : `<small>${list.length} פרומפטים</small>`);
+
+  if(!list.length){
+    const filtered = ui.q || ui.tags.length;
+    let em = '🗂️', head = 'עוד אין כאן כלום', sub = 'זה המקום להוסיף את הפרומפט הראשון בקטגוריה הזו.';
+    if(filtered){ em = '🔎'; head = 'לא נמצאו פרומפטים'; sub = 'נסה מילות חיפוש אחרות או הסר סינון תגיות.'; }
+    else if(ui.view === 'fav'){ em = '⭐'; head = 'עדיין לא סימנת מועדפים'; sub = 'לחץ על הכוכב בפינת כל כרטיס כדי לשמור אותו כאן.'; }
+    else if(ui.view === 'own'){ em = '✨'; head = 'עוד לא הוספת פרומפטים משלך'; sub = 'כל פרומפט שתוסיף יופיע גם כאן.'; }
+    grid.style.display = 'block';
+    grid.innerHTML = `<div class="empty">
+      <div class="big">${em}</div>
+      <h3>${head}</h3>
+      <p>${sub}</p>
+      ${filtered ? '<button class="btn" id="resetF">איפוס סינון</button>' : '<button class="btn btn-primary" id="addHere">פרומפט חדש</button>'}
+    </div>`;
+    const r = document.getElementById('resetF'); if(r) r.onclick = () => { ui.q = ''; ui.tags = []; q.value = ''; render(); };
+    const a = document.getElementById('addHere'); if(a) a.onclick = () => openForm();
+    return;
+  }
+  grid.style.display = 'grid';
+  grid.innerHTML = list.map(card).join('');
+}
+
+function card(p){
+  const c = catById(p.cat) || { name:'ללא קטגוריה', emoji:'📄', color:'#8c8b82' };
+  const sn = subName(p.cat, p.sub);
+  return `<article class="card" data-id="${p.id}" style="--c:${esc(c.color)}">
+    <div class="card-top">
+      <span class="badge"><span class="em">${esc(c.emoji || '')}</span>${esc(c.name)}</span>
+      ${sn ? `<span class="sub-lbl">${esc(sn)}</span>` : ''}
+      <button class="star${p.fav ? ' on' : ''}" data-act="fav" title="${p.fav ? 'הסר ממועדפים' : 'הוסף למועדפים'}">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="${p.fav ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="m12 3.6 2.6 5.3 5.8.85-4.2 4.1 1 5.75L12 16.9l-5.2 2.7 1-5.75-4.2-4.1 5.8-.85z"/></svg>
+      </button>
+    </div>
+    <h3>${hl(p.title, ui.q)}</h3>
+    ${p.desc ? `<p class="desc">${hl(p.desc, ui.q)}</p>` : ''}
+    <div class="snip">${esc(p.body.replace(/\n{2,}/g, '\n').trim().slice(0, 240))}</div>
+    ${p.tags.length ? `<div class="tags">${p.tags.slice(0,4).map(t => `<span class="mini-tag">${esc(t)}</span>`).join('')}</div>` : ''}
+    <div class="card-foot">
+      <button class="act copy" data-act="copy">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2.5"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></svg>
+        <span>העתקה</span>
+      </button>
+      <button class="act act-sm" data-act="share" title="שיתוף">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="2.6"/><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="19" r="2.6"/><path d="m8.3 10.8 7.4-4.3M8.3 13.2l7.4 4.3"/></svg>
+      </button>
+      <button class="act act-sm" data-act="edit" title="עריכה">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 20h4L19.5 8.5a2.1 2.1 0 0 0-3-3L5 17v3z"/></svg>
+      </button>
+      ${p.uses ? `<span class="used">הועתק ${p.uses}×</span>` : ''}
+    </div>
+  </article>`;
+}
+
+grid.addEventListener('click', e => {
+  const cardEl = e.target.closest('.card'); if(!cardEl) return;
+  const p = data.prompts.find(x => x.id === cardEl.dataset.id); if(!p) return;
+  const act = e.target.closest('[data-act]');
+  if(!act){ openView(p); return; }
+  e.stopPropagation();
+  const kind = act.dataset.act;
+  if(kind === 'fav'){ p.fav = !p.fav; p.updated = now(); save(); render(); toast(p.fav ? 'נוסף למועדפים' : 'הוסר מהמועדפים'); }
+  else if(kind === 'copy') doCopy(p, act);
+  else if(kind === 'edit') openForm(p);
+  else if(kind === 'share') openShare(p, act);
+});
+
+async function doCopy(p, btn){
+  const ok = await copyText(p.body);
+  if(!ok){ toast('ההעתקה נכשלה — סמן והעתק ידנית', true); return; }
+  p.uses = (p.uses || 0) + 1; save();
+  toast('הפרומפט הועתק');
+  if(btn){
+    btn.classList.add('done');
+    const label = btn.querySelector('span');
+    if(label){ const old = label.textContent; label.textContent = 'הועתק!'; setTimeout(() => { label.textContent = old; btn.classList.remove('done'); }, 1400); }
+    else setTimeout(() => btn.classList.remove('done'), 1400);
+  }
+}
+
+/* ------------------------------ share ------------------------------ */
+let popEl = null;
+function closePop(){ if(popEl){ popEl.remove(); popEl = null; document.removeEventListener('click', onDocPop, true); } }
+function onDocPop(e){ if(popEl && !popEl.contains(e.target)) closePop(); }
+
+function shareText(p){
+  const c = catById(p.cat);
+  return `${p.title}${c ? ' · ' + c.name : ''}\n${p.desc ? p.desc + '\n' : ''}\n${p.body}`;
+}
+function openShare(p, anchor){
+  closePop();
+  const r = anchor.getBoundingClientRect();
+  popEl = document.createElement('div');
+  popEl.className = 'pop';
+  popEl.innerHTML = `
+    <button data-s="full">📋 העתקה עם כותרת ותיאור</button>
+    <button data-s="wa">💬 שליחה בוואטסאפ</button>
+    <button data-s="mail">✉️ שליחה במייל</button>
+    <button data-s="link">🔗 העתקת קישור פנימי</button>`;
+  document.body.appendChild(popEl);
+  const top = r.bottom + window.scrollY + 6;
+  const w = popEl.offsetWidth;
+  let start = r.left + window.scrollX;
+  if(start + w > window.innerWidth - 10) start = window.innerWidth - w - 10;
+  popEl.style.top = top + 'px'; popEl.style.left = Math.max(10, start) + 'px';
+
+  popEl.addEventListener('click', async ev => {
+    const b = ev.target.closest('[data-s]'); if(!b) return;
+    const kind = b.dataset.s;
+    closePop();
+    if(kind === 'full'){
+      if(navigator.share){ try{ await navigator.share({ title:p.title, text:shareText(p) }); return; }catch(e){ if(e.name === 'AbortError') return; } }
+      toast(await copyText(shareText(p)) ? 'הועתק לשיתוף' : 'ההעתקה נכשלה', false);
+    }
+    else if(kind === 'wa') window.open('https://wa.me/?text=' + encodeURIComponent(shareText(p)), '_blank');
+    else if(kind === 'mail') window.open('mailto:?subject=' + encodeURIComponent(p.title) + '&body=' + encodeURIComponent(shareText(p)));
+    else if(kind === 'link'){
+      const url = location.origin + location.pathname + '#p/' + p.id;
+      toast(await copyText(url) ? 'הקישור הועתק (עובד במחשב שלך)' : 'ההעתקה נכשלה', false);
+    }
+  });
+  document.addEventListener('click', onDocPop, true);
+}
+
+/* ------------------------------ modal shell ------------------------------ */
+let overlayEl = null;
+function closeModal(){ if(overlayEl){ overlayEl.remove(); overlayEl = null; document.body.style.overflow = ''; if(location.hash) history.replaceState(null,'',location.pathname + location.search); } }
+function modal(html, wide){
+  closeModal(); closePop();
+  overlayEl = document.createElement('div');
+  overlayEl.className = 'overlay';
+  overlayEl.innerHTML = `<div class="modal"${wide ? ' style="max-width:820px"' : ''}>${html}</div>`;
+  overlayEl.addEventListener('mousedown', e => { if(e.target === overlayEl) closeModal(); });
+  document.body.appendChild(overlayEl);
+  document.body.style.overflow = 'hidden';
+  return overlayEl.querySelector('.modal');
+}
+
+/* ------------------------------ view prompt ------------------------------ */
+function openView(p){
+  const c = catById(p.cat) || { name:'ללא קטגוריה', emoji:'📄', color:'#8c8b82' };
+  const sn = subName(p.cat, p.sub);
+  const m = modal(`
+    <div class="modal-head" style="--c:${esc(c.color)}">
+      <div style="flex:1;min-width:0">
+        <div class="meta">
+          <span class="badge"><span class="em">${esc(c.emoji || '')}</span>${esc(c.name)}</span>
+          ${sn ? `<span class="sub-lbl" style="padding:0">${esc(sn)}</span>` : ''}
+          ${p.tags.map(t => `<span class="mini-tag">${esc(t)}</span>`).join('')}
+        </div>
+        <h2>${esc(p.title)}</h2>
+      </div>
+      <button class="star${p.fav ? ' on' : ''}" data-a="fav" title="מועדף">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="${p.fav ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="m12 3.6 2.6 5.3 5.8.85-4.2 4.1 1 5.75L12 16.9l-5.2 2.7 1-5.75-4.2-4.1 5.8-.85z"/></svg>
+      </button>
+      <button class="close-x" data-a="close">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      ${p.desc ? `<p class="desc-txt">${esc(p.desc)}</p>` : ''}
+      <div class="prompt-box" id="pbox">${esc(p.body)}</div>
+    </div>
+    <div class="modal-foot">
+      <button class="btn btn-primary" data-a="copy">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2.5"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></svg>
+        <span>העתקת הפרומפט</span>
+      </button>
+      <button class="btn" data-a="share">שיתוף</button>
+      <div class="end">
+        <button class="btn" data-a="edit">עריכה</button>
+        <button class="btn btn-danger" data-a="del">מחיקה</button>
+      </div>
+    </div>`);
+
+  m.addEventListener('click', async e => {
+    const b = e.target.closest('[data-a]'); if(!b) return;
+    const a = b.dataset.a;
+    if(a === 'close') closeModal();
+    else if(a === 'copy') doCopy(p, b);
+    else if(a === 'share') openShare(p, b);
+    else if(a === 'edit') openForm(p);
+    else if(a === 'del') confirmDelete(p);
+    else if(a === 'fav'){
+      p.fav = !p.fav; p.updated = now(); save(); render();
+      b.classList.toggle('on', p.fav);
+      b.querySelector('svg').setAttribute('fill', p.fav ? 'currentColor' : 'none');
+    }
+  });
+}
+
+/* ------------------------------ add / edit ------------------------------ */
+function openForm(p){
+  const editing = !!p;
+  const cur = p || { cat:(ui.view === 'cat' ? ui.cat : data.cats[0]?.id), sub:(ui.view === 'cat' ? ui.sub : null), title:'', desc:'', body:'', tags:[] };
+  const m = modal(`
+    <div class="modal-head">
+      <h2 style="margin:0">${editing ? 'עריכת פרומפט' : 'פרומפט חדש'}</h2>
+      <button class="close-x" id="fClose"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="modal-body">
+      <div class="field">
+        <label for="fTitle">שם הפרומפט</label>
+        <input class="inp" id="fTitle" placeholder="למשל: סיכום פגישה לפי החלטות" value="${esc(cur.title)}">
+        <div class="err" id="eTitle">חובה למלא שם</div>
+      </div>
+      <div class="row2">
+        <div class="field">
+          <label for="fCat">קטגוריה</label>
+          <select class="inp" id="fCat"></select>
+          <input class="inp" id="fCatNew" placeholder="שם הקטגוריה החדשה" style="display:none;margin-top:8px">
+        </div>
+        <div class="field">
+          <label for="fSub">תת-קטגוריה</label>
+          <select class="inp" id="fSub"></select>
+          <input class="inp" id="fSubNew" placeholder="שם תת-הקטגוריה החדשה" style="display:none;margin-top:8px">
+        </div>
+      </div>
+      <div class="field">
+        <label for="fDesc">תיאור קצר <span class="hint">— מה הפרומפט עושה, שורה אחת</span></label>
+        <input class="inp" id="fDesc" value="${esc(cur.desc)}">
+      </div>
+      <div class="field">
+        <label for="fTags">תגיות <span class="hint">— מופרדות בפסיק</span></label>
+        <input class="inp" id="fTags" placeholder="כתיבה, לינקדאין" value="${esc(cur.tags.join(', '))}">
+      </div>
+      <div class="field" style="margin-bottom:0">
+        <label for="fBody">הפרומפט</label>
+        <textarea class="inp" id="fBody" placeholder="הדבק כאן את הפרומפט המלא…">${esc(cur.body)}</textarea>
+        <div class="err" id="eBody">חובה למלא את גוף הפרומפט</div>
+      </div>
+    </div>
+    <div class="modal-foot">
+      <button class="btn btn-primary" id="fSave">${editing ? 'שמירת שינויים' : 'הוספה לספרייה'}</button>
+      <button class="btn" id="fCancel">ביטול</button>
+      ${editing ? '<div class="end"><button class="btn btn-danger" id="fDel">מחיקה</button></div>' : ''}
+    </div>`, true);
+
+  const fCat = m.querySelector('#fCat'), fSub = m.querySelector('#fSub');
+  const fCatNew = m.querySelector('#fCatNew'), fSubNew = m.querySelector('#fSubNew');
+
+  function fillCats(){
+    fCat.innerHTML = data.cats.map(c => `<option value="${esc(c.id)}"${c.id === cur.cat ? ' selected' : ''}>${esc(c.emoji || '')} ${esc(c.name)}</option>`).join('')
+      + '<option value="__new">➕ קטגוריה חדשה…</option>';
+  }
+  function fillSubs(){
+    const c = catById(fCat.value);
+    const subs = c ? c.subs : [];
+    fSub.innerHTML = '<option value="">— ללא —</option>'
+      + subs.map(s => `<option value="${esc(s.id)}"${s.id === cur.sub ? ' selected' : ''}>${esc(s.name)}</option>`).join('')
+      + '<option value="__new">➕ תת-קטגוריה חדשה…</option>';
+  }
+  fillCats(); fillSubs();
+
+  fCat.onchange = () => {
+    const isNew = fCat.value === '__new';
+    fCatNew.style.display = isNew ? 'block' : 'none';
+    if(isNew){ fCatNew.focus(); fSub.innerHTML = '<option value="">— ללא —</option><option value="__new">➕ תת-קטגוריה חדשה…</option>'; }
+    else { cur.sub = null; fillSubs(); }
+    fSubNew.style.display = 'none';
+  };
+  fSub.onchange = () => { fSubNew.style.display = fSub.value === '__new' ? 'block' : 'none'; if(fSub.value === '__new') fSubNew.focus(); };
+
+  m.querySelector('#fClose').onclick = closeModal;
+  m.querySelector('#fCancel').onclick = closeModal;
+  if(editing) m.querySelector('#fDel').onclick = () => confirmDelete(p);
+  setTimeout(() => m.querySelector('#fTitle').focus(), 30);
+
+  m.querySelector('#fSave').onclick = () => {
+    const title = m.querySelector('#fTitle').value.trim();
+    const body  = m.querySelector('#fBody').value.trim();
+    m.querySelector('#eTitle').classList.toggle('show', !title);
+    m.querySelector('#eBody').classList.toggle('show', !body);
+    if(!title || !body) return;
+
+    // קטגוריה חדשה
+    let catId = fCat.value;
+    if(catId === '__new'){
+      const nm = fCatNew.value.trim();
+      if(!nm){ fCatNew.focus(); return; }
+      const palette = ['#d97706','#2563eb','#059669','#7c3aed','#db2777','#0891b2','#4f46e5','#ea580c','#0d9488'];
+      const c = { id:uid(), name:nm, emoji:'📁', color:palette[data.cats.length % palette.length], subs:[] };
+      data.cats.push(c); catId = c.id;
+    }
+    // תת-קטגוריה חדשה
+    let subId = fSub.value === '__new' ? '' : fSub.value;
+    if(fSub.value === '__new'){
+      const nm = fSubNew.value.trim();
+      if(!nm){ fSubNew.focus(); return; }
+      const s = { id:uid(), name:nm };
+      catById(catId).subs.push(s); subId = s.id;
+    }
+
+    const tags = m.querySelector('#fTags').value.split(',').map(t => t.trim()).filter(Boolean);
+    const desc = m.querySelector('#fDesc').value.trim();
+
+    if(editing){
+      Object.assign(p, { title, body, desc, tags, cat:catId, sub:subId, updated:now() });
+      toast('הפרומפט עודכן');
+    }else{
+      data.prompts.push({ id:uid(), title, desc, body, tags, cat:catId, sub:subId, fav:false, uses:0, own:true, created:now(), updated:now() });
+      toast('הפרומפט נוסף לספרייה');
+    }
+    save(); closeModal(); render();
+  };
+}
+
+function confirmDelete(p){
+  const m = modal(`
+    <div class="modal-head"><h2 style="margin:0">למחוק את הפרומפט?</h2></div>
+    <div class="modal-body"><p style="margin:0;color:var(--ink-2)">«${esc(p.title)}» יימחק לצמיתות מהספרייה. אי אפשר לבטל את הפעולה.</p></div>
+    <div class="modal-foot"><button class="btn btn-danger" id="dYes">כן, מחק</button><button class="btn" id="dNo">ביטול</button></div>`);
+  m.querySelector('#dNo').onclick = closeModal;
+  m.querySelector('#dYes').onclick = () => {
+    data.prompts = data.prompts.filter(x => x.id !== p.id);
+    tombstone(p.id);
+    save(); closeModal(); render(); toast('הפרומפט נמחק');
+  };
+}
+
+/* ------------------------------ menu / backup ------------------------------ */
+btnMenu.addEventListener('click', e => {
+  e.stopPropagation();
+  if(popEl){ closePop(); return; }
+  const r = btnMenu.getBoundingClientRect();
+  popEl = document.createElement('div');
+  popEl.className = 'pop';
+  popEl.innerHTML = `
+    <button data-m="sync">☁️ סנכרון עם הנייד</button>
+    <button data-m="export">⬇️ ייצוא גיבוי (JSON)</button>
+    <button data-m="import">⬆️ ייבוא מקובץ</button>
+    <button data-m="reset" style="color:var(--danger)">🗑️ איפוס לספרייה ההתחלתית</button>`;
+  document.body.appendChild(popEl);
+  const w = popEl.offsetWidth;
+  popEl.style.top = (r.bottom + window.scrollY + 6) + 'px';
+  popEl.style.left = Math.max(10, Math.min(r.left + window.scrollX, window.innerWidth - w - 10)) + 'px';
+  popEl.addEventListener('click', ev => {
+    const b = ev.target.closest('[data-m]'); if(!b) return;
+    const kind = b.dataset.m; closePop();
+    if(kind === 'sync') openSyncDialog();
+    else if(kind === 'export') doExport();
+    else if(kind === 'import') fileIn.click();
+    else if(kind === 'reset') confirmReset();
+  });
+  document.addEventListener('click', onDocPop, true);
+});
+
+function doExport(){
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type:'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'prompt-library-' + new Date().toISOString().slice(0,10) + '.json';
+  a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  toast('קובץ הגיבוי ירד');
+}
+
+fileIn.addEventListener('change', () => {
+  const f = fileIn.files[0]; if(!f) return;
+  const rd = new FileReader();
+  rd.onload = () => {
+    try{
+      const d = JSON.parse(rd.result);
+      if(!Array.isArray(d.cats) || !Array.isArray(d.prompts)) throw new Error('bad shape');
+      const m = modal(`
+        <div class="modal-head"><h2 style="margin:0">ייבוא מקובץ</h2></div>
+        <div class="modal-body"><p style="margin:0;color:var(--ink-2)">בקובץ יש ${d.prompts.length} פרומפטים ו-${d.cats.length} קטגוריות. מה לעשות?</p></div>
+        <div class="modal-foot">
+          <button class="btn btn-primary" id="iMerge">מיזוג עם הקיים</button>
+          <button class="btn btn-danger" id="iRepl">החלפה מלאה</button>
+          <div class="end"><button class="btn" id="iNo">ביטול</button></div>
+        </div>`);
+      m.querySelector('#iNo').onclick = closeModal;
+      m.querySelector('#iRepl').onclick = () => { data = normalize(d); save(); closeModal(); render(); toast('הספרייה הוחלפה'); };
+      m.querySelector('#iMerge').onclick = () => {
+        d.cats.forEach(c => { if(!catById(c.id)) data.cats.push(c);
+          else { const ex = catById(c.id); (c.subs || []).forEach(s => { if(!ex.subs.some(x => x.id === s.id)) ex.subs.push(s); }); } });
+        let added = 0;
+        d.prompts.forEach(p => { if(!data.prompts.some(x => x.id === p.id)){ data.prompts.push(p); added++; } });
+        save(); closeModal(); render(); toast(added + ' פרומפטים נוספו');
+      };
+    }catch(e){ toast('הקובץ אינו תקין', true); }
+    fileIn.value = '';
+  };
+  rd.readAsText(f);
+});
+
+function confirmReset(){
+  const m = modal(`
+    <div class="modal-head"><h2 style="margin:0">לאפס את הספרייה?</h2></div>
+    <div class="modal-body"><p style="margin:0;color:var(--ink-2)">כל הפרומפטים שהוספת או ערכת יימחקו, והספרייה תחזור למצב ההתחלתי. כדאי לייצא גיבוי קודם.${syncOn() ? '<br><br><strong style="color:var(--danger)">הסנכרון פעיל — האיפוס יימחק גם מהנייד.</strong>' : ''}</p></div>
+    <div class="modal-foot">
+      <button class="btn" id="rExp">ייצוא גיבוי קודם</button>
+      <div class="end">
+        <button class="btn btn-danger" id="rYes">אפס הכול</button>
+        <button class="btn" id="rNo">ביטול</button>
+      </div>
+    </div>`);
+  m.querySelector('#rNo').onclick = closeModal;
+  m.querySelector('#rExp').onclick = doExport;
+  m.querySelector('#rYes').onclick = () => {
+    const gone = data.prompts.map(p => p.id).concat((data.deleted || []).map(t => t.id));
+    data = seed();
+    gone.forEach(tombstone);                 // כדי שהאיפוס באמת יתפוס גם בענן ולא יוחזר במיזוג
+    save();
+    ui = { view:'all', cat:null, sub:null, q:'', tags:[], sort:'recent' }; q.value = '';
+    closeModal(); render(); toast('הספרייה אופסה');
+  };
+}
+
+/* ============================================================
+   סנכרון מול GitHub Gist פרטי.
+   העותק המקומי הוא תמיד מקור העבודה — הענן רק מיישר בין המכשירים,
+   כך שהדף ממשיך לעבוד גם בלי רשת וגם בלי סנכרון מוגדר.
+   ============================================================ */
+const SYNC_KEY  = 'promptLibrary.sync';
+const GIST_FILE = 'prompt-library.json';
+const GIST_DESC = 'ספריית הפרומפטים — נתונים מסונכרנים (לא למחוק)';
+const GH_API    = 'https://api.github.com';
+
+let sync = loadSync();
+let syncing = false, syncTimer = null, syncAgain = false;
+
+function loadSync(){ try{ return JSON.parse(localStorage.getItem(SYNC_KEY)) || {}; }catch(e){ return {}; } }
+function saveSync(){ try{ localStorage.setItem(SYNC_KEY, JSON.stringify(sync)); }catch(e){} }
+const syncOn = () => !!(sync.token && sync.gistId);
+
+async function gh(path, opts){
+  opts = opts || {};
+  const res = await fetch(GH_API + path, {
+    method: opts.method || 'GET',
+    body: opts.body,
+    headers: {
+      'Accept': 'application/vnd.github+json',
+      'Authorization': 'Bearer ' + sync.token,
+      'X-GitHub-Api-Version': '2022-11-28'
+    }
+  });
+  if(!res.ok){
+    const err = new Error('GitHub ' + res.status);
+    err.status = res.status;
+    try{ err.body = await res.json(); }catch(e){}
+    throw err;
+  }
+  return res.json();
+}
+
+function describeErr(e){
+  if(e && e.status === 401) return 'הטוקן לא תקין או פג תוקף — צריך להתחבר מחדש';
+  if(e && e.status === 404) return 'הקובץ בענן לא נמצא — התחבר מחדש כדי ליצור אותו';
+  if(e && e.status === 403) return 'GitHub חסם זמנית (יותר מדי בקשות) — ננסה שוב בהמשך';
+  if(e && (e.status === 422)) return 'GitHub דחה את הבקשה';
+  return 'אין חיבור לרשת — השינויים נשמרו מקומית ויסונכרנו כשתהיה רשת';
+}
+
+/* מיזוג דו-כיווני: לכל פרומפט מנצח החותם המאוחר, ומחיקות מנצחות עריכות ישנות */
+function mergeData(local, remote){
+  const tomb = {};
+  (local.deleted || []).concat(remote.deleted || []).forEach(t => {
+    if(t && t.id && (!tomb[t.id] || t.at > tomb[t.id])) tomb[t.id] = t.at;
+  });
+
+  const byId = {};
+  (local.prompts || []).forEach(p => { byId[p.id] = p; });
+  (remote.prompts || []).forEach(p => {
+    const cur = byId[p.id];
+    if(!cur){ byId[p.id] = p; return; }
+    const win = (p.updated || '') > (cur.updated || '') ? p : cur;
+    byId[p.id] = Object.assign({}, win, { uses: Math.max(cur.uses || 0, p.uses || 0) });
+  });
+  const prompts = Object.keys(byId).map(k => byId[k])
+    .filter(p => !(tomb[p.id] && tomb[p.id] >= (p.updated || '')));
+
+  // קטגוריות: איחוד לפי מזהה; במקרה של התנגשות מנצח המסמך העדכני יותר
+  const remoteNewer = (remote.updatedAt || '') > (local.updatedAt || '');
+  const lo = remoteNewer ? (local.cats || []) : (remote.cats || []);
+  const hi = remoteNewer ? (remote.cats || []) : (local.cats || []);
+  const cats = {};
+  lo.forEach(c => { cats[c.id] = c; });
+  hi.forEach(c => {
+    if(!cats[c.id]){ cats[c.id] = c; return; }
+    const subs = {};
+    (cats[c.id].subs || []).concat(c.subs || []).forEach(s => { subs[s.id] = s; });
+    cats[c.id] = Object.assign({}, cats[c.id], c, { subs: Object.keys(subs).map(k => subs[k]) });
+  });
+
+  const cut = new Date(Date.now() - 120 * 864e5).toISOString();   // מצבות ישנות נגרסות
+  return {
+    v: 1,
+    updatedAt: now(),
+    cats: Object.keys(cats).map(k => cats[k]),
+    prompts: prompts,
+    deleted: Object.keys(tomb).filter(id => tomb[id] > cut).map(id => ({ id: id, at: tomb[id] }))
+  };
+}
+
+const payload = () => JSON.stringify({
+  v: 1, updatedAt: data.updatedAt || now(),
+  cats: data.cats, prompts: data.prompts, deleted: data.deleted
+}, null, 1);
+const fingerprint = d => JSON.stringify({ c: d.cats, p: d.prompts, d: d.deleted });
+
+async function doSync(opts){
+  opts = opts || {};
+  if(!syncOn()) return;
+  if(syncing){ syncAgain = true; return; }
+  syncing = true; setSyncStatus('working');
+  try{
+    const gist = await gh('/gists/' + sync.gistId);
+    const f = gist.files && gist.files[GIST_FILE];
+    let remote = null;
+    if(f){
+      let content = f.content;
+      if(f.truncated && f.raw_url){ content = await (await fetch(f.raw_url)).text(); }
+      try{ remote = JSON.parse(content); }catch(e){ remote = null; }
+    }
+
+    const before = fingerprint(data);
+    if(remote && Array.isArray(remote.prompts)){
+      const merged = mergeData(data, remote);
+      data.cats = merged.cats; data.prompts = merged.prompts; data.deleted = merged.deleted;
+    }
+    const after = fingerprint(data);
+    if(before !== after){ data.updatedAt = now(); persist(); render(); }
+
+    const remoteFp = remote ? fingerprint(remote) : null;
+    if(remoteFp !== after){
+      const body = { files: {} };
+      body.files[GIST_FILE] = { content: payload() };
+      await gh('/gists/' + sync.gistId, { method: 'PATCH', body: JSON.stringify(body) });
+    }
+
+    sync.lastSync = now(); sync.lastError = null; saveSync();
+    setSyncStatus('ok');
+    if(opts.loud) toast('הסנכרון הושלם');
+  }catch(e){
+    sync.lastError = describeErr(e); saveSync();
+    setSyncStatus('error');
+    if(opts.loud) toast(describeErr(e), true);
+  }finally{
+    syncing = false;
+    if(syncAgain){ syncAgain = false; scheduleSync(); }
+  }
+}
+
+function scheduleSync(){
+  if(!syncOn()) return;
+  clearTimeout(syncTimer);
+  setSyncStatus('pending');
+  syncTimer = setTimeout(() => doSync({}), 1500);
+}
+
+async function connectSync(token){
+  sync.token = token;
+  const gists = await gh('/gists?per_page=100');
+  const found = gists.filter(g => g.files && g.files[GIST_FILE])[0];
+  if(found){
+    sync.gistId = found.id;
+  }else{
+    const body = { description: GIST_DESC, public: false, files: {} };
+    body.files[GIST_FILE] = { content: payload() };
+    const created = await gh('/gists', { method: 'POST', body: JSON.stringify(body) });
+    sync.gistId = created.id;
+  }
+  saveSync();
+  await doSync({ loud: true });
+  return !!found;
+}
+
+/* ------------------------------ sync UI ------------------------------ */
+const CLOUD = '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="M7 18.5A4 4 0 0 1 7.4 10.6a5.2 5.2 0 0 1 9.9 1.1A3.6 3.6 0 0 1 17 18.5z"/></svg>';
+const CLOUD_OK = '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" stroke-linecap="round"><path d="M7 17.5A3.9 3.9 0 0 1 7.4 9.7a5.2 5.2 0 0 1 9.9 1.1A3.6 3.6 0 0 1 17 17.5"/><path d="m9.2 17.6 2.1 2.1 4.2-4.2"/></svg>';
+const CLOUD_OFF = '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" stroke-linecap="round"><path d="M7 18.5A4 4 0 0 1 7.4 10.6a5.2 5.2 0 0 1 9.9 1.1A3.6 3.6 0 0 1 17 18.5z"/><path d="M4 3.6 20.4 20"/></svg>';
+
+function setSyncStatus(state){
+  if(!syncOn() && state !== 'working'){ state = 'off'; }
+  btnSync.dataset.state = state;
+  if(state === 'off'){   btnSync.innerHTML = CLOUD_OFF; btnSync.title = 'סנכרון כבוי — לחץ כדי לחבר את הנייד'; }
+  else if(state === 'ok'){ btnSync.innerHTML = CLOUD_OK; btnSync.title = 'מסונכרן' + (sync.lastSync ? ' · ' + new Date(sync.lastSync).toLocaleTimeString('he-IL', {hour:'2-digit', minute:'2-digit'}) : ''); }
+  else if(state === 'error'){ btnSync.innerHTML = CLOUD; btnSync.title = sync.lastError || 'שגיאת סנכרון'; }
+  else { btnSync.innerHTML = CLOUD; btnSync.title = state === 'working' ? 'מסנכרן…' : 'ממתין לסנכרון…'; }
+}
+
+function openSyncDialog(){
+  const connected = syncOn();
+  const m = modal(`
+    <div class="modal-head">
+      <h2 style="margin:0">סנכרון עם הנייד</h2>
+      <button class="close-x" id="sClose"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="modal-body">
+      ${connected ? `
+        <p class="desc-txt" style="margin-bottom:14px">הספרייה מסונכרנת. כל שינוי כאן או בנייד מתעדכן בשני המכשירים תוך שניות.</p>
+        <div class="prompt-box" style="font-size:13.5px;line-height:1.9">
+          מצב: ${sync.lastError ? '<span style="color:var(--danger)">' + esc(sync.lastError) + '</span>' : 'תקין'}
+          <br>סנכרון אחרון: ${sync.lastSync ? esc(new Date(sync.lastSync).toLocaleString('he-IL')) : 'עדיין לא'}
+          <br>מזהה הקובץ בענן: <code>${esc(String(sync.gistId).slice(0,10))}…</code>
+        </div>
+      ` : `
+        <p class="desc-txt">כדי שהספרייה תהיה זמינה גם בנייד, היא נשמרת בקובץ פרטי אחד בחשבון ה-GitHub שלך. צריך להדביק כאן טוקן — פעם אחת בכל מכשיר.</p>
+        <div class="prompt-box" style="font-size:13.5px;line-height:1.85;margin-bottom:16px">
+          <strong>איך משיגים את הטוקן:</strong>
+          <br>1. פתח <a href="https://github.com/settings/tokens/new?scopes=gist&description=Prompt%20Library" target="_blank" rel="noopener" style="color:var(--accent)">את הדף הזה ב-GitHub</a> — הוא כבר מגיע עם ההרשאה הנכונה מסומנת.
+          <br>2. ודא שמסומן <strong>gist</strong> בלבד, ושום דבר אחר.
+          <br>3. ב-Expiration בחר <strong>No expiration</strong> (אחרת תצטרך לחדש).
+          <br>4. לחץ <strong>Generate token</strong> והעתק את המחרוזת שמתחילה ב-<code>ghp_</code>.
+        </div>
+        <div class="field" style="margin-bottom:0">
+          <label for="sTok">הדבק כאן את הטוקן</label>
+          <input class="inp" id="sTok" type="password" placeholder="ghp_…" autocomplete="off" spellcheck="false" dir="ltr">
+          <div class="err" id="sErr"></div>
+          <p style="font-size:12px;color:var(--ink-3);margin:8px 0 0">הטוקן נשמר רק בדפדפן הזה. ההרשאה מוגבלת ל-gists בלבד — הוא לא יכול לגעת בשום דבר אחר בחשבון שלך.</p>
+        </div>
+      `}
+    </div>
+    <div class="modal-foot">
+      ${connected
+        ? `<button class="btn btn-primary" id="sNow">סנכרן עכשיו</button>
+           <div class="end"><button class="btn btn-danger" id="sOff">ניתוק מהמכשיר הזה</button></div>`
+        : `<button class="btn btn-primary" id="sGo">התחבר</button><button class="btn" id="sCancel">ביטול</button>`}
+    </div>`);
+
+  m.querySelector('#sClose').onclick = closeModal;
+  const cancel = m.querySelector('#sCancel'); if(cancel) cancel.onclick = closeModal;
+
+  const now_ = m.querySelector('#sNow');
+  if(now_) now_.onclick = () => { closeModal(); doSync({ loud: true }); };
+
+  const off = m.querySelector('#sOff');
+  if(off) off.onclick = () => {
+    sync = {}; saveSync(); setSyncStatus('off'); closeModal();
+    toast('הסנכרון נותק במכשיר הזה. הפרומפטים נשארו כאן ובענן.');
+  };
+
+  const go = m.querySelector('#sGo');
+  if(go) go.onclick = async () => {
+    const tok = m.querySelector('#sTok').value.trim();
+    const err = m.querySelector('#sErr');
+    if(!tok){ err.textContent = 'צריך להדביק טוקן'; err.classList.add('show'); return; }
+    go.disabled = true; go.textContent = 'מתחבר…'; err.classList.remove('show');
+    try{
+      const existed = await connectSync(tok);
+      closeModal();
+      toast(existed ? 'התחברת — הנתונים מהענן נמשכו' : 'התחברת — הספרייה הועלתה לענן');
+    }catch(e){
+      sync = {}; saveSync(); setSyncStatus('off');
+      err.textContent = describeErr(e); err.classList.add('show');
+      go.disabled = false; go.textContent = 'התחבר';
+    }
+  };
+  const tok = m.querySelector('#sTok'); if(tok) setTimeout(() => tok.focus(), 30);
+}
+
+btnSync.onclick = openSyncDialog;
+setSyncStatus(syncOn() ? 'ok' : 'off');
+if(syncOn()) doSync({});
+document.addEventListener('visibilitychange', () => { if(!document.hidden && syncOn()) doSync({}); });
+window.addEventListener('online', () => { if(syncOn()) doSync({}); });
+
+/* ------------------------------ theme ------------------------------ */
+const THEME_KEY = 'promptLibrary.theme';
+const SUN  = '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.4 5.4l1.6 1.6M17 17l1.6 1.6M18.6 5.4 17 7M7 17l-1.6 1.6"/></svg>';
+const MOON = '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="M20 14.2A8.2 8.2 0 0 1 9.8 4a8.4 8.4 0 1 0 10.2 10.2z"/></svg>';
+
+function currentTheme(){ return document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light'; }
+function paintThemeBtn(){
+  const dark = currentTheme() === 'dark';
+  btnTheme.innerHTML = dark ? SUN : MOON;   // מציג את מה שיקרה בלחיצה
+  btnTheme.title = dark ? 'מעבר למצב בהיר' : 'מעבר למצב כהה';
+}
+function setTheme(t){
+  document.documentElement.setAttribute('data-theme', t);
+  try{ localStorage.setItem(THEME_KEY, t); }catch(e){}
+  paintThemeBtn();
+}
+btnTheme.onclick = () => setTheme(currentTheme() === 'dark' ? 'light' : 'dark');
+paintThemeBtn();
+
+// אם לא נבחרה ערכה ידנית, עוקבים אחרי הגדרת המערכת
+if(window.matchMedia){
+  const mq = matchMedia('(prefers-color-scheme: dark)');
+  const follow = e => { let saved = null; try{ saved = localStorage.getItem(THEME_KEY); }catch(err){}
+    if(saved !== 'dark' && saved !== 'light'){ document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light'); paintThemeBtn(); } };
+  if(mq.addEventListener) mq.addEventListener('change', follow);
+  else if(mq.addListener) mq.addListener(follow);
+}
+
+/* ------------------------------ wiring ------------------------------ */
+btnNew.onclick = () => openForm();
+
+let qT;
+q.addEventListener('input', () => { clearTimeout(qT); qT = setTimeout(() => { ui.q = q.value.trim(); render(); }, 120); });
+sort.addEventListener('change', () => { ui.sort = sort.value; render(); });
+
+document.addEventListener('keydown', e => {
+  if((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k'){ e.preventDefault(); q.focus(); q.select(); return; }
+  if(e.key === 'Escape'){
+    if(popEl){ closePop(); return; }
+    if(overlayEl){ closeModal(); return; }
+    if(document.activeElement === q && q.value){ q.value = ''; ui.q = ''; render(); }
+    return;
+  }
+  if(e.key === '/' && document.activeElement !== q && !overlayEl && !/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)){
+    e.preventDefault(); q.focus();
+  }
+});
+window.addEventListener('resize', closePop);
+
+render();
+
+// קישור פנימי: #p/<id> פותח את הפרומפט
+(function deepLink(){
+  const m = location.hash.match(/^#p\/(.+)$/);
+  if(m){ const p = data.prompts.find(x => x.id === m[1]); if(p) setTimeout(() => openView(p), 60); }
+})();
+</script>
+</body>
+</html>
