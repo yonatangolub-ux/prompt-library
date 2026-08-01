@@ -470,80 +470,14 @@ const SEED_CATS = [
       {id:'agents', name:'בניית סוכנים'}]}
 ];
 
-const PH = `[מחזיק מקום — כאן ייכנס הפרומפט האמיתי]
 
-## תפקיד
-אתה [תיאור התפקיד והמומחיות].
-
-## משימה
-[מה בדיוק צריך לעשות].
-
-## קלט
-[הטקסט / הנתונים / ההקשר שאני מספק].
-
-## הנחיות
-1. [הנחיה ראשונה]
-2. [הנחיה שנייה]
-3. [מה לא לעשות]
-
-## פורמט הפלט
-[מבנה התשובה המבוקש].`;
-
-const SEED_PROMPTS = [
-  ['פוסט לינקדאין מסיפור אישי','writing','social',['לינקדאין','סטוריטלינג'],'הופך אירוע או תובנה מהשבוע לפוסט עם פתיח חזק ושורת סיום.'],
-  ['שרשור טוויטר מרעיון אחד','writing','social',['X','שרשור'],'פורס רעיון מרכזי לשרשור קצר וקריא.'],
-  ['מייל קר ללקוח פוטנציאלי','writing','email',['מכירות','אאוטריץ׳'],'מייל ראשון קצר, ממוקד ערך, בלי להישמע כמו תבנית.'],
-  ['תשובה מנומסת לסירוב','writing','email',['תקשורת'],'מנסח סירוב ברור ששומר על הקשר.'],
-  ['מאמר מקיף מראשי פרקים','writing','article',['בלוג','SEO'],'הופך שלד של ראשי פרקים לטיוטת מאמר מלאה.'],
-  ['עריכה ללא שינוי הקול שלי','writing','edit',['עריכה'],'מהדק ניסוח ומתקן שגיאות, בלי לשטח את הסגנון האישי.'],
-  ['תרגום שנשמע כמו מקור','writing','edit',['תרגום'],'תרגום מאנגלית לעברית טבעית ולא מילולית.'],
-
-  ['סיכום פגישה לפי החלטות','work','meetings',['סיכום','פעולות'],'מפריד בין החלטות, משימות פתוחות ואחראים.'],
-  ['סדר יום לפגישה בעייתית','work','meetings',['ניהול'],'בונה אג׳נדה לשיחה עם נושא רגיש.'],
-  ['מסמך אפיון ממחשבות מפוזרות','work','docs',['אפיון','PRD'],'הופך ערימת רעיונות למסמך מסודר עם מטרות והיקף.'],
-  ['שלד מצגת ל-10 שקפים','work','docs',['מצגת'],'מבנה סיפורי לשקפים עם מסר אחד לכל שקף.'],
-  ['פירוק פרויקט למשימות','work','planning',['ניהול','תכנון'],'שובר יעד גדול לצעדים קטנים עם סדר עדיפויות.'],
-  ['תכנון שבוע לפי אנרגיה','work','planning',['פרודוקטיביות'],'משבץ משימות לפי רמת הריכוז הנדרשת.'],
-
-  ['כתיבת פונקציה עם בדיקות','dev','build',['קוד','טסטים'],'מייצר מימוש נקי יחד עם מקרי קצה ובדיקות.'],
-  ['רפקטור לקוד קיים','dev','build',['רפקטור'],'משפר קריאות ומבנה בלי לשנות התנהגות.'],
-  ['ניתוח שגיאה משורת סטאק','dev','debug',['דיבאג'],'מזהה את הסיבה השורשית ומציע תיקון מינימלי.'],
-  ['למה זה עובד מקומית ולא בפרודקשן','dev','debug',['דיבאג','דיפלוי'],'רשימת חשודים מסודרת לפי סבירות.'],
-  ['סקירת קוד לפני מיזוג','dev','review',['code review'],'עובר על הדיף ומדגיש באגים אמיתיים בלבד.'],
-  ['README לפרויקט','dev','docs2',['תיעוד'],'מייצר README ברור עם התקנה, שימוש ודוגמאות.'],
-
-  ['סיכום מאמר ארוך לנקודות','research','summary',['סיכום'],'מוציא את הטענות המרכזיות ואת מה שלא נאמר.'],
-  ['השוואת שתי אפשרויות','research','compare',['החלטות'],'טבלת יתרונות, חסרונות והמלצה מנומקת.'],
-  ['ניתוח מתחרים','research','market',['שוק'],'ממפה מתחרים לפי מיצוב, מחיר ופערים.'],
-  ['שאלות שכדאי לשאול לפני שמחליטים','research','compare',['חשיבה'],'חושף הנחות סמויות בהחלטה.'],
-
-  ['קופי לעמוד מוצר','marketing','copy',['קופי'],'כותרת, תת-כותרת ושלוש נקודות ערך.'],
-  ['חמש וריאציות לכותרת','marketing','copy',['A/B'],'זוויות שונות לאותו מסר לבדיקת ביצועים.'],
-  ['מודעת פייסבוק לפי קהל','marketing','ads',['מודעות'],'מתאים את המסר לקהל יעד ספציפי.'],
-  ['מבנה דף נחיתה שממיר','marketing','landing',['המרות'],'סדר סקשנים עם התנגדויות ומענה.'],
-
-  ['תסביר לי נושא מאפס','learning','learn',['למידה'],'הסבר מדורג משלוש רמות עומק.'],
-  ['תרגל אותי בשאלות','learning','practice',['תרגול'],'שאלות מדורגות עם משוב על התשובות.'],
-  ['שיחה עם עצמי על החלטה','learning','personal',['רפלקציה'],'שאלות מנחות במקום תשובות מוכנות.'],
-
-  ['שפר לי את הפרומפט הזה','meta','improve',['מטא'],'מזהה עמימות ומחזיר גרסה חדה יותר.'],
-  ['הפוך תיאור לפרומפט מלא','meta','improve',['מטא'],'ממה שאני רוצה — לפרומפט מובנה.'],
-  ['הנחיית מערכת לעוזר ייעודי','meta','system',['system prompt'],'מגדיר תפקיד, גבולות וטון לעוזר קבוע.'],
-  ['אפיון סוכן עם כלים','meta','agents',['סוכנים'],'מגדיר מטרה, כלים ותנאי עצירה לסוכן.']
-];
-
+/* ספרייה ריקה עם המדפים בלבד — הפרומפטים נכנסים דרך הממשק */
 function seed(){
-  const t = Date.now();
   return {
     updatedAt: now(),
     deleted: [],
     cats: JSON.parse(JSON.stringify(SEED_CATS)),
-    prompts: SEED_PROMPTS.map(([title, cat, sub, tags, desc], i) => ({
-      id: uid(), title, desc, body: PH, cat, sub, tags,
-      fav:false, uses:0, own:false,
-      created:new Date(t - (SEED_PROMPTS.length - i) * 60000).toISOString(),
-      updated:new Date(t - (SEED_PROMPTS.length - i) * 60000).toISOString()
-    }))
+    prompts: []
   };
 }
 
@@ -740,6 +674,7 @@ function render(){
     const filtered = ui.q || ui.tags.length;
     let em = '🗂️', head = 'עוד אין כאן כלום', sub = 'זה המקום להוסיף את הפרומפט הראשון בקטגוריה הזו.';
     if(filtered){ em = '🔎'; head = 'לא נמצאו פרומפטים'; sub = 'נסה מילות חיפוש אחרות או הסר סינון תגיות.'; }
+    else if(ui.view === 'all'){ em = '◆'; head = 'הספרייה ריקה'; sub = 'הקטגוריות מוכנות ומחכות. הוסף את הפרומפט הראשון שלך.'; }
     else if(ui.view === 'fav'){ em = '⭐'; head = 'עדיין לא סימנת מועדפים'; sub = 'לחץ על הכוכב בפינת כל כרטיס כדי לשמור אותו כאן.'; }
     else if(ui.view === 'own'){ em = '✨'; head = 'עוד לא הוספת פרומפטים משלך'; sub = 'כל פרומפט שתוסיף יופיע גם כאן.'; }
     grid.style.display = 'block';
@@ -1065,7 +1000,7 @@ btnMenu.addEventListener('click', e => {
     <button data-m="sync">☁️ סנכרון עם הנייד</button>
     <button data-m="export">⬇️ ייצוא גיבוי (JSON)</button>
     <button data-m="import">⬆️ ייבוא מקובץ</button>
-    <button data-m="reset" style="color:var(--danger)">🗑️ איפוס לספרייה ההתחלתית</button>`;
+    <button data-m="reset" style="color:var(--danger)">🗑️ מחיקת כל הפרומפטים</button>`;
   document.body.appendChild(popEl);
   const w = popEl.offsetWidth;
   popEl.style.top = (r.bottom + window.scrollY + 6) + 'px';
@@ -1121,25 +1056,28 @@ fileIn.addEventListener('change', () => {
 });
 
 function confirmReset(){
+  const n = data.prompts.length;
+  if(!n){ toast('הספרייה כבר ריקה'); return; }
+  const count = n === 1 ? 'הפרומפט היחיד שבספרייה יימחק' : `כל ${n} הפרומפטים שבספרייה יימחקו`;
   const m = modal(`
-    <div class="modal-head"><h2 style="margin:0">לאפס את הספרייה?</h2></div>
-    <div class="modal-body"><p style="margin:0;color:var(--ink-2)">כל הפרומפטים שהוספת או ערכת יימחקו, והספרייה תחזור למצב ההתחלתי. כדאי לייצא גיבוי קודם.${syncOn() ? '<br><br><strong style="color:var(--danger)">הסנכרון פעיל — האיפוס יימחק גם מהנייד.</strong>' : ''}</p></div>
+    <div class="modal-head"><h2 style="margin:0">למחוק את כל הפרומפטים?</h2></div>
+    <div class="modal-body"><p style="margin:0;color:var(--ink-2)">${count}. הקטגוריות והתגיות שלהן יישארו, כך שתוכל להתחיל למלא אותן מחדש. אי אפשר לבטל את הפעולה.${syncOn() ? '<br><br><strong style="color:var(--danger)">הסנכרון פעיל — המחיקה תחול גם על הנייד.</strong>' : ''}</p></div>
     <div class="modal-foot">
       <button class="btn" id="rExp">ייצוא גיבוי קודם</button>
       <div class="end">
-        <button class="btn btn-danger" id="rYes">אפס הכול</button>
+        <button class="btn btn-danger" id="rYes">מחק הכול</button>
         <button class="btn" id="rNo">ביטול</button>
       </div>
     </div>`);
   m.querySelector('#rNo').onclick = closeModal;
   m.querySelector('#rExp').onclick = doExport;
   m.querySelector('#rYes').onclick = () => {
-    const gone = data.prompts.map(p => p.id).concat((data.deleted || []).map(t => t.id));
-    data = seed();
-    gone.forEach(tombstone);                 // כדי שהאיפוס באמת יתפוס גם בענן ולא יוחזר במיזוג
+    const gone = data.prompts.map(p => p.id);
+    data.prompts = [];
+    gone.forEach(tombstone);                 // כדי שהמחיקה תתפוס גם בענן ולא תוחזר במיזוג
     save();
     ui = { view:'all', cat:null, sub:null, q:'', tags:[], sort:'recent' }; q.value = '';
-    closeModal(); render(); toast('הספרייה אופסה');
+    closeModal(); render(); toast('כל הפרומפטים נמחקו');
   };
 }
 
